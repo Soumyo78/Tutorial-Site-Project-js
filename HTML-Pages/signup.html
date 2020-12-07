@@ -1,0 +1,62 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Styles/styles.css">
+    <title>Sign up</title>
+</head>
+<body id="signup-body" class="body-container">
+    <header>
+        <div class="nav-bar">
+            <strong><a href="home.html">🏠 Home Page    |</a></strong>
+            <strong><a href="login.html">🔑 Login Page   |</a></strong>
+            <strong><a href="signup.html">👨‍🦱 Signup Page    |</a></strong>
+        </div>
+    </header>
+    <div class="signup-main-container">
+        <h2 id="signup-title">👨‍🦱 Signup here</h2>
+        <form class="form-container" action="javascript:createNewUser()">
+            <h3>Fill the bellow details ...</h3>
+            <p>
+                <input id="f-name-box" type="text" name="first_name" placeholder="First Name" required>
+                <input id="l-name-box" type="text" name="last_name" placeholder="Last Name" required>
+            </p>
+
+            <p>
+                <input id="email-box" type="email" name="email" placeholder="Enter your email address" required>
+            </p>
+
+            <p>
+                <input id="pH-box" type="tel" name="phone" placeholder="Enter your mobile no.">
+            </p>
+
+            <p>
+                <input id="pass-box" type="password" name="new_password" placeholder="New Password" required>
+                <input id="re-pass-box" type="password" name="retype_pass" placeholder="Retype New Password" required>
+            </p>
+
+            <strong><label for="gender">Select your gender</label></strong>
+            <p>
+                <input id="option-1" type="radio" name="gender" value="Male" required>Male <br>
+                <input id="option-2" type="radio" name="gender" value="Female">Female <br>
+                <input id="option-3" type="radio" name="gender" value="Other">Others <br>
+            </p>
+
+            <strong><label for="DOB">Enter your Date of Birth</label></strong>
+            <p>
+                <input id="dob-box" type="date" name="dob" min="1980-01-01" max="2005-01-01" required>
+            </p>
+            
+            <p>
+                <input id="check-box" type="checkbox" required>
+                <strong>Accept our terms and conditions.</strong>
+            </p>
+            <input id="signup-btn" class="btn" type="submit" value="Signup">
+        </form>
+        <!-- <button id="signup-btn" class="btn" onclick="createNewUser()">Signup</button> -->
+        <h4 style="color: red;">Already have an account ? |<a href="login.html"> Sign in</a></h4>
+    </div>
+
+    <script src="../Scripts/script.js"></script>
+</body>
+</html>
