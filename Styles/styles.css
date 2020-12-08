@@ -92,9 +92,19 @@
     align-items: center;
 }
 
-.list-heading{
+.list-heading, .table-headings{
     color: red;
     text-decoration: underline;
+    font-weight: bold;
+}
+
+.table-left-text{
+    color: blue;
+    font-weight: bold;
+}
+
+.table-right-text{
+    color: orange;
     font-weight: bold;
 }
 
