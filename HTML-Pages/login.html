@@ -2,19 +2,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://icons.iconarchive.com/icons/paomedia/small-n-flat/1024/key-icon.png" type="image/x-icon">
     <link rel="stylesheet" href="../Styles/styles.css">
     <title>Login</title>
 </head>
 <body id="login-body" class="body-container">
     <header>
-        <div class="nav-bar">
-            <strong><a href="home.html">🏠 Home Page    |</a></strong>
-            <strong><a href="login.html">🔑 Login Page   |</a></strong>
-            <strong><a href="signup.html">👨‍🦱 Signup Page    |</a></strong>
-        </div>
+        <ul class="nav-list">
+            <li><strong><a href="home.html">🏠 Home Page</a></strong></li>
+            <li><strong><a href="login.html">🔑 Login Page</a></strong></li>
+            <li><strong><a href="signup.html">👨‍🦱 Signup Page</a></strong></li>
+        </ul>
     </header>
     <div class="login-main-container">
-        <form class="form-container" id="login-form-container">
+        <form class="form-container" id="login-form-container" action="javascript:onLogin()">
             <label for="🔑 Sign in here"><h2 style="text-align: center;">Sign in here</h2></label>
             <p style="text-align: center;"><input id="login-email-box" type="email" name="login-email" placeholder="email" required></p>
             <p style="text-align: center;"><input id="login-password-box" type="password" name="login-password" placeholder="password" required></p>
@@ -23,6 +24,6 @@
         <h4 style="text-align: center;">Did not have an account ? |<a href="signup.html"> Signup</a></h4>
     </div>
 
-    <script src="../Scripts/script.js"></script>
+    <script src="../Scripts/login_script.js"></script>
 </body>
 </html>

@@ -7,15 +7,29 @@
     margin: 0;
 }
 
-.nav-bar{
-    background-color: rgb(31, 24, 24);
-    padding: 10px;
+.nav-list{
+    font-family: 'Montserrat', sans-serif;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
 }
 
-.nav-bar a{
-    color: blanchedalmond;
-    text-decoration: unset;
-    font-family: 'Raleway', sans-serif;
+.nav-list li{
+    float: left;
+}
+
+.nav-list li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.nav-list li a:hover{
+    background-color: #111;
 }
 
 .tutorial-main-container{
@@ -33,6 +47,17 @@
     justify-content: center;
     color: rgb(236, 223, 32);
     font-family: 'Montserrat', sans-serif;
+}
+
+.live-user-container{
+    flex: auto;
+    display: flex;
+    flex-wrap: wrap;
+    background-color:orangered;
+    justify-content: flex-start;
+    padding-left: 10px;
+    color: white;
+    font-family: 'Montserrat', sans-serif; 
 }
 
 #html-structure-pic-container{
