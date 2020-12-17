@@ -1,4 +1,5 @@
 let user_details_arr = JSON.parse(localStorage.getItem("user_details"));
+(user_details_arr == null) ? `${alert("No user is registered. Local storage is empty. Go to signup page to register.")}` : user_details_arr = user_details_arr;
 let user_name = null;
 
 function checkEmailPass(user_mail, user_pass){
